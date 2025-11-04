@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Life | Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 25px;
+            display: block;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff5500;
+        }
+
+        /* ======== SECTIONS ======== */
+        section {
+            padding: 50px 15%;
+            background-color: #fff;
+            margin: 20px auto;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        section h2 {
+            text-align: center;
+            color: #ff5500;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .content {
+            text-align: center;
+        }
+
+        /* ======== WORKOUT PLANS ======== */
+        .plans {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .plan {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            width: 280px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .plan:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .plan h3 {
+            color: #ff5500;
+            margin-bottom: 10px;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan li {
+            margin: 8px 0;
+        }
+
+        /* ======== CLASS TIMINGS ======== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #ff5500;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* ======== CONTACT SECTION ======== */
+        .contact-info {
+            text-align: center;
+            line-height: 1.8;
+        }
+        .contact-info a {
+            color: #ff5500;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* ======== FOOTER ======== */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        /* ======== RESPONSIVE DESIGN ======== */
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 5%;
+            }
+            .plans {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Fit Life Studio</h1>
+        <p>Your Journey to a Stronger, Healthier You</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#workouts">Workout Plans</a>
+        <a href="#classes">Class Timings</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Fit Life</h2>
+        <div class="content">
+            <p>Welcome to <strong>Fit Life Studio</strong> — where fitness meets motivation! Founded by certified fitness trainer <strong>Alex Parker</strong>, our mission is to help you reach your health goals through personalized workouts, positive energy, and a supportive community.</p>
+            <p>Whether you’re new to fitness or a seasoned athlete, Fit Life provides a range of programs to suit your needs — from strength training to yoga, and everything in between.</p>
+        </div>
+    </section>
+
+    <!-- WORKOUT PLANS -->
+    <section id="workouts">
+        <h2>Workout Plans</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Beginner Boost</h3>
+                <ul>
+                    <li>Full-body workouts</li>
+                    <li>Low-impact cardio</li>
+                    <li>3 days/week</li>
+                    <li>Basic nutrition tips</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Strength & Power</h3>
+                <ul>
+                    <li>Weight training</li>
+                    <li>High-protein nutrition</li>
+                    <li>5 days/week</li>
+                    <li>Progress tracking</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Fat Burn Express</h3>
+                <ul>
+                    <li>HIIT sessions</li>
+                    <li>Core strengthening</li>
+                    <li>4 days/week</li>
+                    <li>Calorie-based meal plans</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLASS TIMINGS -->
+    <section id="classes">
+        <h2>Class Timings</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Evening</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>6:00 AM - 8:00 AM (HIIT)</td>
+                <td>6:00 PM - 8:00 PM (Strength)</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>7:00 AM - 9:00 AM (Yoga)</td>
+                <td>5:30 PM - 7:30 PM (Cardio)</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>6:00 AM - 8:00 AM (CrossFit)</td>
+                <td>6:00 PM - 8:00 PM (HIIT)</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Rest Day</td>
+                <td>6:00 PM - 7:30 PM (Zumba)</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>6:00 AM - 8:00 AM (Strength)</td>
+                <td>6:00 PM - 8:00 PM (Cardio Mix)</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>7:00 AM - 9:00 AM (Bootcamp)</td>
+                <td>5:00 PM - 7:00 PM (Stretch & Core)</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td colspan="2">Closed (Rest Day)</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> Fit Life Studio, 123 Wellness Street, Springfield</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> <a href="mailto:info@fitlife.com">info@fitlife.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/fitlifestudio" target="_blank">@fitlifestudio</a></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2025 Fit Life Studio. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
